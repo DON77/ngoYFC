@@ -12,11 +12,17 @@
 
 # testing
 /coverage
-
+.vscode/
 # next.js
 /.next/
 /out/
 
+# cloudflare / opennext
+/.open-next/
+/.wrangler/
+CONTENT_HANDOFF.md
+CALUDE.md
+AGENTS.md
 # production
 /build
 

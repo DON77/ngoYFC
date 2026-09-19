@@ -1,26 +1,290 @@
 @import "tailwindcss";
 
+.eyebrow { margin-bottom: 0.75rem; color: #1d4ed8; font-size: 0.875rem; font-weight: 700; }
+.section-title { font-size: 2rem; line-height: 1.2; }
+.field-label { display: block; font-size: 0.875rem; font-weight: 600; color: #334155; }
+.form-control { display: block; width: 100%; min-height: 2.75rem; border: 1px solid #94a3b8; border-radius: 0.5rem; padding: 0.7rem 0.85rem; background: white; color: #0f172a; }
+.form-control:disabled { background: #f1f5f9; color: #64748b; }
+:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+html { scroll-padding-top: 6rem; }
+h1, h2, h3, h4, p, a, button { overflow-wrap: anywhere; letter-spacing: 0; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+
+/* ===========================================
+   DESIGN TOKENS
+=========================================== */
+
 :root {
+  /* Brand */
+  --primary: #0f5fff;
+  --primary-dark: #0b4bd3;
+  --secondary: #2d7ff9;
+  --accent: #38bdf8;
+
+  /* Backgrounds */
   --background: #ffffff;
-  --foreground: #171717;
+  --surface: #f8fafc;
+  --surface-alt: #eff6ff;
+
+  /* Text */
+  --foreground: #0f172a;
+  --text: #334155;
+  --muted: #64748b;
+
+  /* States */
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+
+  /* Border */
+  --border: #e2e8f0;
+
+  /* Radius */
+  --radius: 1.5rem;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 12px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 60px rgba(15, 23, 42, 0.12);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ===========================================
+   BASE
+=========================================== */
+
+* {
+ box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white text-slate-900 antialiased;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===========================================
+   TYPOGRAPHY
+=========================================== */
+
+@layer base {
+  h1 {
+    @apply text-5xl font-extrabold text-slate-900 lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-4xl font-bold text-slate-900 lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl font-semibold text-slate-900;
+  }
+
+  h4 {
+    @apply text-xl font-semibold text-slate-900;
+  }
+
+  p {
+    @apply leading-8 text-slate-600;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+::selection {
+  background: #bfdbfe;
+  color: #0f172a;
+}
+
+/* ===========================================
+   REUSABLE BACKGROUNDS
+=========================================== */
+
+.bg-primary-gradient {
+  background: linear-gradient(
+    135deg,
+    #0f5fff 0%,
+    #2d7ff9 45%,
+    #38bdf8 100%
+  );
+}
+
+.bg-soft-gradient {
+  background: linear-gradient(
+    to bottom,
+    white,
+    #f8fbff
+  );
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(15,95,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15,95,255,.05) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+}
+
+/* ===========================================
+   DECORATION
+=========================================== */
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: .35;
+  pointer-events: none;
+}
+
+.blob-blue {
+  background: #0f5fff;
+}
+
+.blob-cyan {
+  background: #38bdf8;
+}
+
+/* ===========================================
+   CARDS
+=========================================== */
+
+.card {
+  @apply rounded-3xl border border-slate-200 bg-white;
+  box-shadow: var(--shadow-sm);
+  transition: all .35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ===========================================
+   BUTTON HELPERS
+=========================================== */
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white transition-all duration-300;
+  background: var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-900 transition-all duration-300;
+}
+
+.btn-secondary:hover {
+  @apply border-blue-500 text-blue-600;
+}
+
+/* ===========================================
+   IMAGES
+=========================================== */
+
+.image-rounded {
+  @apply overflow-hidden rounded-3xl;
+}
+
+.image-rounded img {
+  transition: transform .5s ease;
+}
+
+.image-rounded:hover img {
+  transform: scale(1.05);
+}
+
+/* ===========================================
+   ANIMATIONS
+=========================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp .8s ease both;
+}
+
+.hover-lift {
+  transition: all .3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+}
+
+.hover-scale {
+  transition: transform .35s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================================
+   SCROLLBAR
+=========================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ===========================================
+   UTILITIES
+=========================================== */
+
+.section-padding {
+  @apply py-24 lg:py-32;
+}
+
+.container-width {
+  @apply mx-auto max-w-7xl px-6 lg:px-8;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0f5fff, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

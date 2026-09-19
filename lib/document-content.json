@@ -1,0 +1,495 @@
+{
+  "home": {
+    "introduction": "Founded in 2017, Youth for Change works to strengthen the youth sector, promote social justice, and support the rights and participation of young people in Armenia. Through non-formal education, advocacy, policy initiatives, and collaboration, we help young people gain the knowledge, skills, networks, and opportunities they need to engage meaningfully in social, political, and economic life.",
+    "focusIntroduction": "Youth for Change is a Yerevan based non-governmental organization empowering young people in Armenia to participate, lead, and create positive change in their communities. Our work focuses on the following areas:",
+    "focusAreas": [
+      "Democracy and Civic Participation",
+      "Human Rights and Social Justice",
+      "LGBTQI+ Rights and Inclusion",
+      "Gender Equality",
+      "Youth Empowerment and Employability",
+      "Civil Society Development"
+    ],
+    "newsletter": "Subscribe to our newsletter to receive the latest news, opportunities and updates from Youth for Change."
+  },
+  "about": {
+    "paragraphs": [
+      "Youth for Change is a youth-led civil society organization based in Yerevan, Armenia.",
+      "Since 2017, we have worked to strengthen youth participation, advance human rights and social justice, and create opportunities for young people to engage meaningfully in the civic, social, political and economic processes affecting their lives.",
+      "Through non-formal education, advocacy, policy initiatives and collaboration, we help young people develop the knowledge, skills, networks and confidence needed to make their voices heard and turn their ideas into action.",
+      "We believe that young people are not simply beneficiaries of change - they are capable of leading it."
+    ],
+    "vision": "An inclusive and resilient Armenia in which young people are empowered and capable of participating in the sustainable development of their own lives and their communities.",
+    "mission": "To empower young people in Armenia through inclusive education, leadership development and community engagement, providing a participatory and safe environment for developing young people's capacities and strengthening their involvement in community life.",
+    "values": [
+      {
+        "title": "Equality",
+        "description": "Every young person has equal worth and equal claim to opportunity."
+      },
+      {
+        "title": "Inclusion",
+        "description": "We design for those who are usually left out, not for those who are easiest to reach."
+      },
+      {
+        "title": "Non-discrimination",
+        "description": "We reject discrimination on any ground, in our programmes and in our own team."
+      },
+      {
+        "title": "Transparency",
+        "description": "Our decisions, finances and results are open to scrutiny."
+      },
+      {
+        "title": "Democracy",
+        "description": "We practise internally the participation we advocate for externally."
+      },
+      {
+        "title": "Freedom",
+        "description": "We defend young people's freedom of expression, association and choice."
+      },
+      {
+        "title": "Diversity",
+        "description": "Difference within our team and our community is a source of strength."
+      },
+      {
+        "title": "Accountability and integrity",
+        "description": "We answer for our commitments to young people, partners and donors."
+      }
+    ],
+    "teamIntroduction": [
+      "Youth for Change is shaped by people who believe in the power of young people to participate, lead and create meaningful change.",
+      "Our team works together to develop programs, build partnerships, support young people and communities, and turn the organization\u2019s mission into action."
+    ],
+    "board": "The Board provides strategic guidance and governance oversight, helping ensure that Youth for Change remains accountable and aligned with its mission, values and long-term priorities.",
+    "partnershipIntroduction": [
+      "Meaningful and sustainable change is built through cooperation.",
+      "Youth for Change works with donors, civil society organizations, public institutions, educational institutions, businesses, networks and other stakeholders that share our commitment to youth empowerment, democracy, human rights, inclusion and meaningful participation.",
+      "These collaborations enable us to create opportunities for young people, exchange knowledge, strengthen our programmes and connect communities with relevant expertise and institutions."
+    ],
+    "partnershipInvitation": [
+      "We welcome partnerships with organizations and institutions whose goals and values align with ours.",
+      "Partnerships may include jointly developed projects, educational initiatives, advocacy, research, knowledge exchange, public events and community-based activities.",
+      "If your organization works in youth empowerment, democracy, civic participation, human rights, social justice, inclusion or a related field, we would be pleased to explore opportunities for collaboration."
+    ],
+    "reportsIntroduction": "Explore Youth for Change\u2019s annual reports, financial information and other institutional documents. These resources provide an overview of our activities, partnerships, results and organizational development."
+  },
+  "projectsIntroduction": "Explore how Youth for Change strengthens youth participation in democratic decision-making, advances human rights and inclusion, and supports youth-led initiatives across Armenia.",
+  "projects": [
+    {
+      "slug": "democracy-coffee-talks",
+      "title": "Democracy Coffee Talks",
+      "status": "Current",
+      "period": "2026",
+      "location": "Armenia",
+      "paragraphs": [
+        "Democracy Coffee Talks creates accessible and informal spaces where young people can discuss democracy, elections, civic rights and the issues affecting their communities. The project aims to strengthen young people\u2019s understanding of democratic processes and support their meaningful participation in public and community life.",
+        "Through regional discussions, civic-education activities and dialogue with experts and decision-makers, participants develop the knowledge and confidence needed to express their views, assess public information critically and engage constructively in democratic processes."
+      ],
+      "resultsHeading": "Planned Activities and Expected Results",
+      "results": [
+        "Regional Democracy Coffee Talks involving young people from different communities.",
+        "Civic-education sessions on democracy, elections, human rights and participation.",
+        "Direct dialogue between young people, civil-society representatives, experts and decision-makers.",
+        "Improved critical-thinking, media-literacy and public-discussion skills.",
+        "Increased awareness of opportunities for youth participation in local and national decision-making.",
+        "Stronger cooperation between young people, civil society and public institutions."
+      ],
+      "acknowledgment": "The project is implemented with the financial support of the European Endowment for Democracy (EED)."
+    },
+    {
+      "slug": "youth-led-election-oversight",
+      "title": "Youth-Led Oversight for Transparent 2026 Elections in Armenia",
+      "status": "Completed",
+      "period": "February-July 2026",
+      "location": "Shirak, Lori and Tavush",
+      "paragraphs": [
+        "'We' Youth NGO of Lori Region, in cooperation with 'Youth for Change' NGO, implemented the project 'Youth-Led Oversight for Transparent 2026 Elections in Armenia.' The project aimed to contribute to the transparency and accountability of the 2026 parliamentary elections by strengthening the participation of youth and local civil society in electoral oversight processes.",
+        "The independent observation mission 'Azat Qve' (Free Vote), established within the framework of the project, conducted short-term observation during the June 7, 2026 National Assembly elections."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Geographical Scope: 50 accredited observers monitored the electoral process across polling stations in Shirak (28), Lori (14), and Tavush (8) regions.",
+        "Legal Achievement: The RA Administrative Court ruling upheld the organization's right to observation, setting a precedent in protecting civic oversight.",
+        "Response Mechanisms: On election day, 3 formal applications were submitted to the Police, and over 20 operational alerts were addressed to the Central Electoral Commission.",
+        "Systemic Recommendations: The report presented recommendations aimed at ensuring polling station accessibility, regulating video recording, making technical improvements to voter authentication devices, and training election commission members."
+      ],
+      "acknowledgment": "The project is implemented with the financial support of the European Union. The contents are the sole responsibility of \u201cYouth for Change\u201d Civil Society Development NGO and \u201cWE\u201d Youth NGO of Lori Region, and do not necessarily reflect the views of the European Union."
+    },
+    {
+      "slug": "digital-shield",
+      "title": "Digital Shield",
+      "status": "Completed",
+      "period": "February - July 2026",
+      "location": "Yerevan",
+      "paragraphs": [
+        "Digital Shield was a community-led initiative strengthening the digital and physical safety of LGBTQ+ people in Armenia. It created confidential spaces where community members could identify risks, discuss their experiences and contribute to practical protection resources.",
+        "A closed anti-conference engaged 17 LGBTQ+ participants in identifying priority issues, including hate speech, digital security, online blackmail, dating-platform risks, personal-data protection, family violence and physical safety. The findings were anonymized and used to develop a 16-page Digital Shield toolkit. Seventy printed copies were distributed, and a digital version was published online. A final Safe Space gathering brought together 32 community members, partners and allies to review the toolkit and strengthen mutual-support connections. Project savings also enabled a public-awareness campaign comprising five information posters and three short videos."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "17 LGBTQ+ participants engaged in a confidential anti-conference",
+        "16-page safety toolkit developed and 70 copies distributed",
+        "32 participants joined the final Safe Space gathering",
+        "5 posters and 3 short videos produced"
+      ],
+      "acknowledgment": "This project is realized with the financial support of PINK and Sweden."
+    },
+    {
+      "slug": "voices-of-participatory-budgeting",
+      "title": "Voices of Participatory Budgeting",
+      "status": "Completed",
+      "period": "August 2025 - February 2026",
+      "location": "Armenia",
+      "paragraphs": [
+        "Voices of Participatory Budgeting documented how citizen participation in local budgeting can improve communities and strengthen trust in local decision-making. The project focused particularly on young people and women and used research and storytelling to make participatory-budgeting experiences more visible and accessible.",
+        "Working with local civil-society organizations and local self-government representatives, the team conducted field research across 21 communities and documented successful participatory-budgeting experiences. Five online capacity-building sessions covered storytelling, research, community engagement, leadership and public speaking, engaging 130 participants. The project concluded with the TEDx event 'Voices of Participatory Budgeting,' attended by 100 people. A four-week communication campaign published 14 storytelling posts, reached more than 150,000 people and generated over 900 interactions, creating a lasting collection of practical examples of participatory governance in Armenia."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Participatory-budgeting stories documented across 21 communities",
+        "5 online sessions engaged 130 participants",
+        "TEDx event attended by 100 people",
+        "Campaign reached 150,000+ people"
+      ],
+      "acknowledgment": "Voices of Participatory Budgeting was implemented by Youth for Change NGO with support from GIZ and the European Union."
+    },
+    {
+      "slug": "equal-voices-equal-rights",
+      "title": "Equal Voices, Equal Rights",
+      "status": "Completed",
+      "period": "January-September 2025",
+      "location": "Armenia",
+      "paragraphs": [
+        "Equal Voices, Equal Rights strengthened young people's understanding of LGBTQ+ rights, discrimination prevention and responses to hate speech. The initiative combined human-rights education, youth-led media production and public storytelling in a challenging environment marked by coordinated online attacks and threats.",
+        "Thirty young people from Yerevan and Armenia's regions participated in an initial three-day training in Tsaghkadzor. They developed practical skills for recognizing discrimination, responding to hate speech and communicating human-rights messages. Six speakers then received individual storytelling and public-speaking coaching and delivered TEDx talks that challenged stereotypes and amplified the experiences of LGBTQ+ people and other marginalized groups. A 15-post media campaign reached approximately 200,000 people. Project savings supported two additional trainings for 33 young people and the production of two additional videos. Safety measures were applied throughout implementation to protect participants and partners."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "63 young people engaged through 3 training activities",
+        "6 speakers coached and 6 TEDx talks delivered",
+        "Campaign reached approximately 200,000 people"
+      ],
+      "acknowledgment": "This project is realized with the financial support of PINK and Sweden."
+    },
+    {
+      "slug": "together-with-ukraine",
+      "title": "Together with Ukraine",
+      "status": "Completed",
+      "period": "February-August 2023",
+      "location": "Yerevan",
+      "paragraphs": [
+        "Together with Ukraine supported young Ukrainians who relocated to Armenia following Russia's invasion of Ukraine. The project helped participants navigate Armenia's labour market, access employment and educational opportunities, understand their rights and adapt to a new social and cultural environment.",
+        "Thirty participants completed a six-day capacity-development programme covering employment and minority rights, CV and motivation-letter writing, personal marketing, job-search strategies and opportunities in Armenia. They then received one month of individual and group mentoring. Fifteen participants obtained internship opportunities, while two received support to establish an NGO and an individual enterprise. The project also produced English- and Ukrainian-language resources on employment, rights and essential services, conducted a needs assessment based on 35 interviews, created a digital support platform and produced a final awareness-raising video."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "30 participants completed training and mentoring",
+        "15 internship opportunities provided",
+        "Bilingual employment and rights resources developed",
+        "Needs assessment and digital support platform completed"
+      ],
+      "acknowledgment": "Together with Ukraine was implemented with the support of the European Youth Foundation of the Council of Europe under the Special Call Ukraine."
+    },
+    {
+      "slug": "civil-society-resilience",
+      "title": "COVID-19: Civil Society Resilience and Sustainability",
+      "status": "Completed",
+      "period": "January-April 2023",
+      "location": "Armenia",
+      "paragraphs": [
+        "This organizational capacity-building initiative strengthened Youth for Change NGO's ability to operate effectively amid the continuing effects of the COVID-19 pandemic, regional conflict, inflation and increasing competition for international funding.",
+        "The project combined strategic planning, governance development, fundraising training and four months of practical mentoring. YFC's board and staff assessed the organization, reviewed its mission and vision and developed a three-year strategic plan, an organizational structure and a package of internal policies. The team also developed a fundraising strategy, mapped prospective donors and partners and prepared new partnership materials. During the mentoring phase, YFC developed six grant proposals, three of which were approved, and expanded cooperation with local and international organizations. The initiative strengthened internal systems, resource-mobilization capacity and YFC's ability to respond to new opportunities."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "3-year strategic plan and organizational structure developed",
+        "Core governance and safeguarding policies adopted",
+        "Fundraising strategy and donor map prepared",
+        "6 grant proposals developed, of which 3 were approved"
+      ],
+      "acknowledgment": "This initiative was implemented under the COVID-19: Civil Society Resilience and Sustainability programme with financial support from the European Union and programme support from Equal Rights & Independent Media and Human Rights House Yerevan."
+    },
+    {
+      "slug": "youth-inclusion-through-employability",
+      "title": "Youth Inclusion through Employability",
+      "status": "Completed",
+      "period": "June 2021-March 2022",
+      "location": "Tsaghkadzor, Armenia",
+      "paragraphs": [
+        "Youth Inclusion through Employability addressed youth unemployment and the mismatch between young people's skills and employers' expectations in Armenia. With expertise from Visegrad partner organizations, the project combined non-formal education, practical work experience and direct engagement with employers.",
+        "Sixty young people from Lori, Tavush, Syunik, Shirak and Yerevan, including displaced youth and young people with disabilities, participated in employability training in Tsaghkadzor. They strengthened skills in job searching, CV preparation, personal marketing, communication, critical thinking and problem-solving. Twenty-five participants subsequently received internship placements. The project concluded with a public job fair in Yerevan connecting students and young professionals with employers, public institutions and civil-society organizations. Training resources were published for young people and non-formal educators, while cooperation agreements with three Armenian universities supported the continuation of career-development activities."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "60 young people completed employability training",
+        "25 internship placements organized",
+        "Training module and practical guideline developed",
+        "Cooperation agreements signed with 3 Armenian universities"
+      ],
+      "acknowledgment": "Youth Inclusion through Employability was financed by the International Visegrad Fund."
+    },
+    {
+      "slug": "grow-job-expo-4",
+      "title": "GROW Job Expo - Volume 4",
+      "status": "Completed",
+      "period": "18 February 2022",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO organized the fourth GROW Job Expo to connect young people and jobseekers directly with employers and make employment opportunities more accessible.",
+        "The event brought together companies, educational institutions and young professionals on one platform. Participants learned about vacancies and labour-market trends, communicated directly with organizational representatives, submitted their CVs and explored opportunities to apply for jobs."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Youth Participation: 2,500 young people, jobseekers and young professionals attended the expo.",
+        "Employer Engagement: 32 employers and organizations presented vacancies and career opportunities.",
+        "Employment Access: Participants communicated directly with employers and submitted CVs for available positions.",
+        "Diverse Representation: Companies, educational institutions and international brands participated in the event.",
+        "Confirmed Participants: Participating organizations included Coca-Cola, InecoBank, Armenia Marriott Hotel Yerevan and the Armenian State Institute of Physical Culture and Sport.",
+        "Professional Networking: The expo strengthened direct connections between young professionals, employers and organizational representatives."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO."
+    },
+    {
+      "slug": "youth-voice-matters",
+      "title": "Youth for Community Development: Youth Voice Matters",
+      "status": "Completed",
+      "period": "September 2021- February 2022",
+      "location": "Nationwide",
+      "paragraphs": [
+        "Youth Voice Matters was a nationwide youth-participation initiative implemented as part of the European Youth Foundation's 2022 Youth Campaign. It supported pluralistic democracy and strengthened young people's ability to understand, exercise and advocate for their rights.",
+        "Thirty-five young people were selected from Armenia's ten regions and Yerevan for a six-day training on democracy, human rights, political participation, active citizenship, storytelling and digital advocacy. Participants then received coaching to design and deliver youth-led activities in cooperation with local NGOs, municipalities and local self-government representatives. Eleven regional meetings created direct opportunities for young people and decision-makers to discuss community challenges and possible solutions. A nationwide digital campaign amplified young people's priorities, while a final dialogue event in Yerevan brought participants together with representatives of public institutions and civil society."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "35 core participants trained and mentored",
+        "11 youth-led regional meetings organized",
+        "250 participants engaged overall",
+        "Nationwide digital campaign and final dialogue event delivered"
+      ],
+      "acknowledgment": "This project is financially supported by the Council of Europe through its European Youth Foundation as part of the 2022 Democracy Now, Democracy Here Campaign."
+    },
+    {
+      "slug": "women-for-community-development",
+      "title": "Women for Community Development",
+      "status": "Completed",
+      "period": "September 2021-February 2022",
+      "location": "Nationwide",
+      "paragraphs": [
+        "Women for Community Development empowered young women from Armenia's regions to participate actively in community life and local decision-making. The project addressed gender stereotypes and structural barriers that limit women's political and civic participation, particularly in rural communities.",
+        "A five-day Young Women Leadership School introduced participants to leadership, political participation, active citizenship, human rights, gender equality and advocacy. Study visits to Yerevan Municipality and the National Assembly connected the learning process with public institutions. Selected participants then completed internships, developed locally relevant training materials and organized 11 activities across Armenia's ten regions and Yerevan. The project concluded with the TEDx event 'Who Runs the World,' where six women shared experiences related to discrimination, gender barriers and leadership. Their talks were recorded and published online, extending the project's reach and creating lasting resources."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "5-day leadership school completed",
+        "11 local training activities delivered",
+        "Approximately 150 young women reached through local activities",
+        "6 TEDx talks recorded and published"
+      ],
+      "acknowledgment": "This project is financially supported by the Council of Europe through its European Youth Foundation."
+    },
+    {
+      "slug": "grow-job-expo-3",
+      "title": "GROW Job Expo - Volume 3",
+      "status": "Completed",
+      "period": "27 May 2021",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO and United Youth Union jointly organized the third GROW Job Expo to bridge the gap between employers and jobseekers and make employment and volunteering opportunities more accessible to young people.",
+        "Held in Charles Aznavour Square, the free, open-access event brought together young people, jobseekers, young professionals, employers, educational institutions and professional associations."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Youth Participation: Approximately 2,000 young people, jobseekers and young professionals attended the expo.",
+        "Employer Engagement: Around 30 employers and organizations presented vacancies, volunteering positions and career opportunities.",
+        "Diverse Participation: Companies, educational institutions and professional associations contributed to the event.",
+        "Employment Access: Participants communicated directly with employers and explored available positions.",
+        "Professional Networking: The expo strengthened connections among young people, employers and HR professionals.",
+        "Free Access: Participation was open and free of charge."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO and United Youth Union."
+    },
+    {
+      "slug": "young-women-leadership-academy",
+      "title": "Young Women Leadership Academy",
+      "status": "Completed",
+      "period": "2020",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "The Young Women Leadership Academy strengthened Youth for Change NGO's capacity to design and deliver leadership education for young women in Armenia. The initiative combined curriculum development, staff capacity-building and institutional support to create a sustainable foundation for future academy cycles.",
+        "An external expert worked with the YFC team to develop educational modules and prepare staff members as junior trainers able to use non-formal education methods. The project was implemented during the COVID-19 pandemic, requiring planned in-person activities to be reconsidered and adapted. Institutional support also enabled YFC to develop and launch a new organizational website: content and structure were prepared, a visual concept was developed and the platform was built. Together, these outputs strengthened YFC's educational, institutional and communication capacity."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Leadership-academy educational modules developed",
+        "YFC staff prepared as junior trainers",
+        "A new organizational website designed and launched"
+      ],
+      "acknowledgment": "The Young Women Leadership Academy was implemented with the support of the Prague Civil Society Centre."
+    },
+    {
+      "slug": "volunteer-opportunity-fair",
+      "title": "Volunteer Opportunity Fair",
+      "status": "Completed",
+      "period": "2 December 2019",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO, United Youth Union and the Armenian State University of Economics jointly organized the Volunteer Opportunity Fair to connect young people with civil society organizations and accessible volunteering opportunities. The event encouraged young people to contribute their time, skills and energy to community initiatives while gaining practical experience, developing new competencies and building professional networks."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Youth Participation: Approximately 500 young people participated in the fair.",
+        "Organizational Representation: 20 organizations presented their volunteering programmes and opportunities.",
+        "Knowledge and Inspiration: Four guest speakers shared experiences and perspectives related to volunteering, employment, entrepreneurship and personal development.",
+        "Networking Opportunities: Participants engaged directly with civil society organizations and explored opportunities to become involved in their programmes.",
+        "Public Interest: More than 1,100 people responded to the event announcement on Facebook."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO, United Youth Union and the Armenian State University of Economics."
+    },
+    {
+      "slug": "grow-conference-job-fair-2",
+      "title": "GROW Conference & Job Fair - Volume 2",
+      "status": "Completed",
+      "period": "27 October 2019",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO, United Youth Union and OxYGen Foundation jointly organized the second GROW Conference & Job Fair to connect young professionals, recent graduates and jobseekers with employers, human-resources specialists and career-development opportunities.",
+        "The event combined professional presentations with a job fair, enabling participants to explore employment opportunities, expand their professional networks and learn directly from leading companies and experts."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Youth Participation: Approximately 200 young people and other stakeholders participated.",
+        "Organizational Engagement: 50 local and international organizations presented vacancies, programmes and professional opportunities.",
+        "Expert Contributions: Representatives of Ameriabank, Holiday Inn Yerevan Republic Square, Reload Freight and other organizations shared practical professional experience.",
+        "Career Development: Sessions addressed talent acquisition, employee satisfaction, organizational growth and employment opportunities.",
+        "Professional Networking: Participants connected directly with employers, HR specialists and youth-sector experts."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO, United Youth Union and OxYGen Foundation."
+    },
+    {
+      "slug": "grow-conference-job-fair",
+      "title": "GROW Conference & Job Fair",
+      "status": "Completed",
+      "period": "4 May 2019",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO and United Youth Union jointly organized the GROW Conference & Job Fair to support young people\u2019s professional development, employability and career orientation.",
+        "The event combined expert presentations with a job fair, bringing together recent graduates, young professionals, jobseekers, human-resources specialists and employers."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Youth Participation: More than 200 people participated in the event.",
+        "Expert Contributions: At least six speakers shared experience from business, education, hospitality, entrepreneurship and organizational development.",
+        "Employment Opportunities: Participating companies presented job vacancies and professional opportunities.",
+        "Professional Development: Sessions covered career growth, workplace relations, employee motivation, education and entrepreneurship.",
+        "Networking: Participants connected directly with employers, speakers and human-resources professionals."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO and United Youth Union."
+    },
+    {
+      "slug": "step-by-step-5",
+      "title": "Step by Step with Successful People - Volume 5",
+      "status": "Completed",
+      "period": "23 February 2019",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO and United Youth Union jointly organized the fifth edition of the Step by Step with Successful People conference. The event created an opportunity for young people to meet accomplished professionals from business, media, public life, show business and other fields.",
+        "Through personal stories and interactive presentations, the speakers discussed their professional journeys, the challenges they had overcome, the knowledge they had gained and the practical experience that contributed to their success. The conference aimed to inspire young people, broaden their understanding of different career paths and encourage their personal and professional development."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Youth Participation: More than 150 delegates participated in the conference.",
+        "Expert Contributions: Six speakers from different professional fields shared their experiences and lessons learned.",
+        "Career Inspiration: Participants explored different professional journeys, challenges and approaches to personal development.",
+        "Knowledge Exchange: The conference provided a direct platform for dialogue between young people and experienced professionals."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO and United Youth Union."
+    },
+    {
+      "slug": "tedxufar",
+      "title": "TEDxUFAR",
+      "status": "Completed",
+      "period": "April-December 2018",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "TEDxUFAR created a public platform for sharing ideas and personal experiences related to human rights, civil society and freedom of expression. Through two thematic TEDx Salon events, the project encouraged participants, particularly young people, to better understand their rights and engage in public discussion about the consequences of human-rights violations.",
+        "Twelve speakers from different professional and personal backgrounds received individual public-speaking coaching and presented their ideas to live audiences. All 12 talks were professionally recorded, published on YouTube and prepared with English subtitles, extending their accessibility beyond the events themselves. The project created lasting digital resources and demonstrated sustained public interest in open discussion of rights and civic participation."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "2 TEDx Salon events organized",
+        "12 speakers coached and 12 talks delivered",
+        "All talks recorded, published online and prepared with English subtitles"
+      ],
+      "acknowledgment": "This project was implemented with the support of the Open Society Foundations."
+    },
+    {
+      "slug": "step-femme",
+      "title": "STEP Femme",
+      "status": "Completed",
+      "period": "16 June 2018",
+      "location": "Yerevan, Armenia",
+      "paragraphs": [
+        "Youth for Change NGO and United Youth Union jointly organized STEP Femme, a youth-focused forum promoting women\u2019s empowerment and the active participation of young women in Armenia\u2019s educational, political, economic and public life.",
+        "Organized in an interview format, the event connected young women with experienced female professionals, entrepreneurs, educators and activists. Speakers shared their professional journeys, achievements and challenges, while delegates had the opportunity to ask questions and engage in direct discussion."
+      ],
+      "resultsHeading": "Key Results",
+      "results": [
+        "Women\u2019s Empowerment: The forum created a dedicated platform for discussing young women\u2019s leadership and participation in public life.",
+        "Expert Exchange: Female professionals and leaders shared practical experience from education, entrepreneurship, activism and other fields.",
+        "Interactive Participation: The interview format enabled delegates to engage directly with speakers and ask questions.",
+        "Leadership Focus: Discussions addressed women\u2019s participation in education, politics, economics and decision-making."
+      ],
+      "acknowledgment": "Organized by: Youth for Change NGO and United Youth Union."
+    }
+  ],
+  "volunteer": {
+    "introduction": "At Youth for Change, volunteering means putting your time, ideas and energy behind work that's already moving - projects that open up democratic participation, defend human rights, and build stronger, more inclusive communities across Armenia. It's a two-way exchange: you help push real initiatives forward, and in return you pick up hands-on experience, new skills, and a network of people doing similar work.",
+    "profile": [
+      "believe in what we're trying to do and share our values",
+      "care about young people having a real say in their communities",
+      "treat equality, diversity and non-discrimination as non-negotiable",
+      "can commit reliably to the time they sign up for",
+      "are curious, cooperative, and ready to take initiative",
+      "can join us remotely, from Yerevan, or from anywhere in the regions"
+    ],
+    "experience": "You don't need prior volunteering experience. Motivation and follow-through matter more than a r\u00e9sum\u00e9 line.",
+    "roles": [
+      "helping run a workshop, training, public discussion or community event, from planning through delivery",
+      "shaping our public voice - writing, shooting photos or videos, building out social content and awareness campaigns",
+      "building bridges between young people, local organizations and community leaders, especially outside Yerevan",
+      "digging into the research, surveys, data or policy analysis behind our advocacy work",
+      "keeping a project moving day to day - coordinating with participants, handling logistics, documentation and reporting",
+      "translating or editing materials between Armenian, English"
+    ],
+    "benefits": [
+      "real experience inside the civil-society and youth sector",
+      "sharper communication, teamwork, leadership and project-management skills",
+      "access to select trainings and learning opportunities",
+      "a direct hand in work that creates visible social change",
+      "relationships with other young people, professionals and partner organizations",
+      "a clearer sense of which civic or professional paths interest you",
+      "room to pitch and help build your own youth-led ideas",
+      "written confirmation of your contribution",
+      "a reference letter, once you've completed a meaningful, documented stretch of active volunteering"
+    ],
+    "international": "A note on international opportunities: they come up, but they're never guaranteed. When they do, active volunteers may be invited to apply through a separate, transparent selection process.",
+    "expectations": [
+      "respect Youth for Change's mission, values and internal policies",
+      "treat every participant, colleague and partner with dignity",
+      "handle confidentiality and personal data responsibly",
+      "follow our safeguarding and non-discrimination principles",
+      "deliver on commitments reliably and on time",
+      "flag it early if their availability changes",
+      "take part in the orientation or training sessions we ask of them",
+      "avoid speaking publicly on behalf of Youth for Change without authorization"
+    ],
+    "steps": [
+      "Apply - fill out the online volunteer form: your interests, experience and availability.",
+      "Talk it through - if you're a fit, we'll set up a short conversation about where you could contribute.",
+      "Get oriented - new volunteers get briefed on who we are, our policies, and what's available.",
+      "Get matched - we place you with a project or activity based on our needs and your interests and schedule.",
+      "Look back and grow - your contribution gets documented, and depending on your involvement, you may receive feedback, a certificate or a reference letter."
+    ],
+    "placement": "A quick note: applying doesn't guarantee a placement. What's available depends on which projects are active, what the organization needs at that moment, location, the skills required, and whether we have the supervision capacity to support you.",
+    "inclusion": "Youth for Change is committed to an inclusive, respectful environment. We don't tolerate discrimination, harassment, hate speech or breaches of confidentiality - from anyone, including volunteers."
+  }
+}
