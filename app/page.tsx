@@ -7,9 +7,16 @@ import {
   Equal,
   GraduationCap,
   Landmark,
+  Briefcase,
+  CalendarDays,
+  MapPin,
 } from "lucide-react";
 import Container from "./components/ui/Container";
 import Button from "./components/ui/Button";
+import Hero from "./components/home/Hero";
+import Section from "./components/ui/Section";
+import SectionHeading from "./components/ui/SectionHeading";
+import Card from "./components/ui/Card";
 import content from "@/lib/document-content.json";
 
 const focusIcons = [
@@ -26,6 +33,7 @@ const impact = [
   ["100+", "Trainings and Events"],
   ["50+", "Communities Reached"],
 ];
+const impactIcons = [Briefcase, Users, CalendarDays, MapPin];
 const pathways = [
   {
     title: "Participate",
@@ -50,56 +58,22 @@ const pathways = [
 export default function HomePage() {
   return (
     <>
-      <section className="border-b border-slate-100 bg-soft-gradient py-12 lg:py-20">
+      <Hero />
+      <Section background="soft">
         <Container>
-          <div className="grid items-center gap-10 lg:grid-cols-2">
-            <div>
-              <p className="mb-5 text-sm font-semibold text-blue-700">
-                Empowering Youth. Creating Change.
-              </p>
-              <h1 className="text-5xl leading-tight lg:text-7xl">
-                Youth for Change
-              </h1>
-              <p className="mt-6 max-w-xl">{content.home.introduction}</p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Button href="/projects">
-                  Explore Our Work <ArrowRight size={18} />
-                </Button>
-                <Button href="/contact" variant="outline">
-                  Get Involved
-                </Button>
-              </div>
-            </div>
-            <figure>
-              <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-                <Image
-                  src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200"
-                  alt="People exchanging ideas around a shared table"
-                  fill
-                  priority
-                  sizes="(max-width: 1023px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-              <figcaption className="mt-2 text-xs text-slate-500">
-                Illustrative photograph
-              </figcaption>
-            </figure>
-          </div>
-        </Container>
-      </section>
-      <section className="py-16 lg:py-20">
-        <Container>
-          <p className="eyebrow">Our focus</p>
-          <h2 className="section-title">Young people at the heart of change</h2>
-          <p className="mt-5 max-w-3xl">{content.home.focusIntroduction}</p>
-          <div className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          <SectionHeading
+            align="center"
+            eyebrow="Our focus"
+            title="Young people at the heart of change"
+            description={content.home.focusIntroduction}
+          />
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {content.home.focusAreas.map((area, index) => {
               const Icon = focusIcons[index];
               return (
                 <div
                   key={area}
-                  className="flex items-center gap-4 border-t border-slate-200 pt-6"
+                  className={`flex min-h-48 flex-col items-center justify-center gap-5 rounded-lg border-4 bg-white p-7 text-center shadow-sm ${index % 2 ? "border-teal-700" : "border-blue-600"}`}
                 >
                   <Icon
                     className={
@@ -107,7 +81,7 @@ export default function HomePage() {
                         ? "shrink-0 text-teal-700"
                         : "shrink-0 text-blue-600"
                     }
-                    size={28}
+                    size={36}
                   />
                   <h3 className="text-lg">{area}</h3>
                 </div>
@@ -115,32 +89,49 @@ export default function HomePage() {
             })}
           </div>
         </Container>
-      </section>
-      <section className="border-y border-blue-100 bg-blue-50 py-14">
+      </Section>
+      <Section>
         <Container>
-          <h2 className="section-title">Our impact</h2>
-          <dl className="mt-8 grid grid-cols-2 gap-8 lg:grid-cols-4">
-            {impact.map(([value, label]) => (
-              <div key={label}>
-                <dt className="text-sm text-slate-600">{label}</dt>
-                <dd className="mt-2 text-4xl font-bold text-blue-700">
-                  {value}
-                </dd>
-              </div>
-            ))}
+          <SectionHeading align="center" title="Our impact" />
+          <dl className="mt-16 grid gap-8 sm:grid-cols-2 xl:grid-cols-4">
+            {impact.map(([value, label], index) => {
+              const Icon = impactIcons[index];
+              return (
+                <Card key={label} className="flex flex-col items-center border border-slate-100 text-center">
+                  <dt className="contents">
+                    <span className="order-1 flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+                      <Icon size={30} aria-hidden="true" />
+                    </span>
+                    <span className="order-3 mt-3 text-xl font-semibold text-slate-900">{label}</span>
+                  </dt>
+                  <dd className="order-2 mt-6 text-5xl font-extrabold text-blue-600">{value}</dd>
+                </Card>
+              );
+            })}
           </dl>
         </Container>
-      </section>
-      <section className="py-16 lg:py-20">
+      </Section>
+      <Section background="soft">
         <Container>
-          <p className="eyebrow">Get involved</p>
-          <h2 className="section-title">Be part of the change</h2>
-          <div className="mt-10 grid gap-10 md:grid-cols-3">
+          <SectionHeading align="center" eyebrow="Get involved" title="Be part of the change" />
+          <div className="grid gap-10 md:grid-cols-3">
             {pathways.map((pathway) => (
               <article
                 key={pathway.title}
-                className="flex flex-col items-start border-t-2 border-teal-600 pt-6"
+                className="flex flex-col items-start"
               >
+                <figure className="mb-6 w-full">
+                  <div className="relative aspect-[2.2/1] overflow-hidden rounded-full">
+                    <Image
+                      src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200"
+                      alt=""
+                      fill
+                      sizes="(max-width: 767px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="mt-2 text-xs text-slate-500">Illustrative photograph</figcaption>
+                </figure>
                 <h3>{pathway.title}</h3>
                 <p className="mb-6 mt-3">{pathway.text}</p>
                 <Button
@@ -155,13 +146,12 @@ export default function HomePage() {
             ))}
           </div>
         </Container>
-      </section>
-      <section className="border-t border-slate-200 bg-slate-50 py-14">
+      </Section>
+      <Section>
         <Container>
-          <div className="max-w-2xl">
-            <h2 className="section-title">Stay connected</h2>
-            <p className="mt-4">{content.home.newsletter}</p>
-            <form className="mt-6" aria-label="Newsletter subscription">
+          <div className="mx-auto max-w-3xl text-center">
+            <SectionHeading align="center" title="Stay connected" description={content.home.newsletter} />
+            <form className="mt-6 text-left" aria-label="Newsletter subscription">
               <label htmlFor="newsletter-email" className="field-label">
                 Email address
               </label>
@@ -171,7 +161,7 @@ export default function HomePage() {
                   type="email"
                   disabled
                   placeholder="you@example.com"
-                  className="form-control max-w-sm"
+                  className="form-control min-w-0 flex-1 basis-56"
                   aria-describedby="newsletter-status"
                 />
                 <Button disabled type="submit">
@@ -185,7 +175,7 @@ export default function HomePage() {
             </form>
           </div>
         </Container>
-      </section>
+      </Section>
     </>
   );
 }

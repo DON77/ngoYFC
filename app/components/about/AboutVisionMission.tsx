@@ -8,7 +8,7 @@ import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Card from "@/components/ui/Card";
 
-import { aboutVisionMission } from "@/lib/about-content";
+import content from "@/lib/document-content.json";
 
 
 export default function AboutVisionMission() {
@@ -139,7 +139,7 @@ export default function AboutVisionMission() {
                   text-lg
                 "
               >
-                {aboutVisionMission.vision}
+                {content.about.vision}
               </p>
 
 
@@ -163,7 +163,7 @@ export default function AboutVisionMission() {
 
               border-none
 
-              bg-blue-600
+              bg-blue-600!
             "
           >
 
@@ -256,7 +256,7 @@ export default function AboutVisionMission() {
                   text-white/80
                 "
               >
-                {aboutVisionMission.mission}
+                {content.about.mission}
               </p>
 
 

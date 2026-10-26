@@ -6,19 +6,19 @@ import content from "@/lib/document-content.json";
 
 export const metadata = { title: "Volunteer With Us" };
 const volunteer = content.volunteer;
-const sections = [
+const sections: { title: string; text: string; items: string[]; note?: string }[] = [
   {
-    title: "Who we're looking for",
+    ...volunteer.sectionIntroductions[0],
     items: volunteer.profile,
     note: volunteer.experience,
   },
-  { title: "Where you can contribute", items: volunteer.roles },
+  { ...volunteer.sectionIntroductions[1], items: volunteer.roles },
   {
-    title: "What you'll gain",
+    ...volunteer.sectionIntroductions[2],
     items: volunteer.benefits,
     note: volunteer.international,
   },
-  { title: "What we ask of volunteers", items: volunteer.expectations },
+  { ...volunteer.sectionIntroductions[3], items: volunteer.expectations },
 ];
 
 export default function VolunteerPage() {
@@ -40,6 +40,7 @@ export default function VolunteerPage() {
               className="mt-12 border-t border-slate-200 pt-8"
             >
               <h2 className="section-title">{section.title}</h2>
+              <p className="mt-4">{section.text}</p>
               <ul className="mt-6 list-disc space-y-3 pl-6 text-slate-700">
                 {section.items.map((item) => (
                   <li key={item} className="pl-2 leading-7">

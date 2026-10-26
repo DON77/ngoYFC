@@ -93,6 +93,7 @@ export default function ContactHero() {
           <h1
             className="
               mt-6
+              max-sm:text-[2.5rem]
             "
           >
 

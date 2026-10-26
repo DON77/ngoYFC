@@ -1,0 +1,571 @@
+YOUTH FOR CHANGE - VERSION AND REQUIREMENTS REVIEW
+Review date: 2026-10-10
+Status: Home styling restored locally with document changes; dependencies remain.
+Production has not been deployed or changed by these corrections.
+
+HOME HEADLINE CORRECTION - 2026-10-10
+- The styling restoration incorrectly brought back the placeholder headline
+	"Building Tomorrow Through Youth, Innovation & Community". That was a
+	regression, not an intended reversal of the approved content changes.
+- Restored "Youth for Change" as the Home h1, retaining the original visual
+	styling. Removed the below-360px font override needed only by the placeholder.
+- Corrected the regression test to require the exact h1 and reject the old
+	placeholder. The focused Home test passes, including the supplied introduction,
+	focus areas, impact figures, CTA destinations, newsletter and section deletions.
+- Earlier hero-height measurements below predate this headline correction;
+	they are historical evidence, not measurements of the corrected page.
+
+HOME RESTORATION FOLLOW-UP - 2026-10-10
+User clarification: preserve old styling while implementing the document.
+- Reconnected the retained home/Hero.tsx instead of approximating it in page.tsx.
+	Retained the original photograph shown in document image7,
+	background accents, entrance animation, split grid, image frame and floating
+	impact-card styling. Initially restored the placeholder headline in error;
+	the correction above supersedes that decision. Old styling does not mean
+	reverting approved content.
+- Applied the supplied badge and introduction, Explore Our Work -> /projects,
+	and Get Involved -> /contact. Removed the joined-by block. The floating card
+	now uses the supplied 2,000+ Direct Participants, not the old 8,500+ claim.
+- Kept all six focus areas, four supplied impact figures, three participation
+	pathways and newsletter copy. Focus tiles now use centered icons/text and
+	stronger borders following image19; capsule pathways follow image23.
+	The document's deleted Home sections remain absent. Existing navigation,
+	footer changes, accessibility behavior and disabled subscription state remain.
+- Before the headline correction, compared old/local computed hero styles
+	at measured 1440px and 390px:
+	matching font size/weight/line height, grid columns/gaps, section padding,
+	image dimensions, frame radius/shadow and floating-card padding/radius/shadow.
+	Image frames: 536x520 desktop and 332x520 mobile. Changed text/removal of the
+	trust block makes the hero 16px/24px taller respectively; the card width
+	follows its corrected label. These are content-driven differences.
+- Initially reduced the placeholder headline to 40px below 360px to prevent
+	splitting Community. This override was removed with the headline correction;
+	the approved title retains the old 48px mobile and 72px desktop styling.
+- All 40 content/route tests, focused ESLint and TypeScript checks passed.
+	Browser checks confirmed five Home sections, the five intended CTA links,
+	disabled newsletter intake, loaded images and no horizontal overflow at
+	1440px/390px. Lazy images were scrolled into view before checking loads.
+- Full-page captures were inspected, but the browser host resized the page
+	during capture. Exact-width evidence above comes from measured DOM checks,
+	not a claim of pixel-perfect screenshot parity.
+- Remaining: approve continued use/replacement of the existing hero photograph,
+	supply distinct approved pathway images, and approve/configure newsletter
+	service and policies. The pathway images remain labeled illustrative stock.
+
+HOME RECHECK - 2026-10-10 (HISTORICAL, BEFORE FOLLOW-UP ABOVE)
+Compared the old preview, yfcngo.org and localhost:3001 at a measured 1440px.
+- The public site does not include the local corrections. Its hero still uses
+	py-12/lg:py-20 spacing and a 435px-high image; local uses the old
+	py-24/lg:py-32 spacing and a 520px-high image frame.
+- Local is not a faithful visual restoration yet. The hero uses a different
+	photograph, a much shorter headline, no old background accents and no
+	floating impact card. Matching font size and grid spacing is insufficient.
+- The document explicitly changes supporting copy/buttons, removes joined-by
+	proof and other sections, and requests new focus/impact/Get Involved/newsletter
+	content. Those differences should remain; do not restore the entire old page.
+- The document does not explicitly remove the floating impact-card layout.
+	Its unsupported 8,500+ claim must not return, but removing its design outright
+	was an additional interpretation, not a demonstrated requirement.
+- Image approval and hero-reference ambiguity remain open. They do not justify
+	describing every remaining visual difference as an asset dependency.
+- Earlier completion statements below refer to selected restored properties,
+	not a completed Home design restoration. No further UI changes or deployment
+	were made during this recheck.
+
+CURRENT CORRECTIONS AND REMAINING REQUESTS
+This section supersedes the pre-correction findings preserved later in this
+file. The original R01-R16 descriptions are historical audit evidence, not a
+claim that every original defect remains in the edited source.
+
+CORRECTED LOCALLY
+- Shared presentation: restored original-scale inner-page heroes, centered
+	badge/heading treatment, section spacing, header Get Involved action and
+	footer columns/contact row. Current navigation, keyboard controls, real
+	organization identity, acknowledgment and requested footer color change remain.
+	The full desktop menu starts at 1280px to accommodate the current link set.
+- Home: restored split hero proportions, 520px image frame, large pill actions,
+	centered section headings, alternating section backgrounds and four icon-led
+	impact cards. Supplied figures, text, requested section removals and working
+	destinations are preserved. No fictional impact/proof claims were restored.
+- R10: implemented image-led capsule framing for Participate, Volunteer and
+	Partner, preserving the three named actions. The same illustrative stock image
+	is temporarily reused, clearly captioned; approved distinct images are pending.
+- R01: Restored retained Contact hero, information cards, centered form section
+	and social links. The explicitly deleted bottom CTA remains absent. Real
+	contact details, correct social icons, required fields, Partnership subject
+	preselection and the honest email-draft behavior are preserved. No fake phone.
+- R09: Restored the exact supplied Team heading and all four Volunteer headings
+	and lead-in paragraphs through the DOCX importer, with regression checks.
+- R11: restored split-image About hero, factual 2017 founding badge, two-column
+	introduction and About-page links. Supplied vision/mission, all eight values
+	and the About CTA remain. Fixed the mission card's background conflict.
+	The reused About stock image is explicitly labeled illustrative.
+- R12: restored project image frames, rounded three-column cards, status anchors
+	and partnership CTA. Detail pages now use split heroes, overview/content
+	columns and result cards. All 19 full records, status groups, acknowledgments
+	and current-project participation links remain. An empty projectImages registry
+	in lib/projects-content.ts supports approved photos; neutral image placeholders
+	are shown until those photos are supplied. No unrelated project photos added.
+- R07: restored portrait-sized Team card areas and original grid proportions,
+	retaining the six real identities and LinkedIn links. Initials remain in those
+	areas until approved portrait mapping is supplied.
+- R13: Replaced flat Home focus rows with prominent bordered icon tiles.
+- R03: Added resource cover and language metadata, cover-led cards, a category
+	sidebar, dates and view/download actions. Kept single-category filtering,
+	date sorting, empty states and a fallback for records without covers.
+- R06: Added responsive groups of up to five partner logos, with wrapping
+	next/previous controls when more than five partners exist. Empty directories
+	remain honest; no sample organizations or documents were published.
+
+AMBIGUOUS REQUESTS - DECISION NEEDED
+1. Hero badge behavior (R14; P6-P10/image13): Is "Empowering Youth.
+	 Creating Change." a decorative pill or a clickable button? If clickable,
+	 provide its destination. Currently it retains the old non-clickable badge
+	 behavior. The user's clarification resolves the styling baseline: retain
+	 the original hero and apply the supplied text/actions, not a new hero design.
+2. Footer color (R15; P41-P42): Provide the intended color or approve the
+	 current light teal. The document requests a change but gives no target.
+3. Publication category selection (R03; image15): Confirm one category at a
+	 time or multiple simultaneous categories. The sidebar currently uses radio
+	 controls to preserve the existing single-category behavior.
+4. Contact delivery (R05): Accept the clearly disclosed email-app draft, or
+	 require messages submitted and delivered by the website itself?
+5. Historical URLs (R16): Identify real old news/event/project URLs that need
+	 redirects or an archive. Current entry redirects and missing-detail 404s
+	 are preserved; no demo content or invented slug mappings are restored.
+6. Content maintenance: Name the owner of project-status updates and approve
+	 any changes to the document's one Current/eighteen Completed classification.
+
+CONTRACTOR / CONTENT OWNER MUST PROVIDE
+1. Approved logo and favicon, suitable file formats and usage guidance (R15).
+2. All six approved Team portraits mapped explicitly to each person's name
+	 (R07). A public folder listing was visible, but complete mapping was not.
+3. Approved donors/partners and networks/coalitions inventory: names, website
+	 URLs, logo files and intended order (R06). Grant usable access to the
+	 supplied partner folder or deliver an archive.
+4. Publications and Reports: final files, titles, categories, publication
+	 dates, language, descriptions, covers and view/download URLs (R03). The
+	 Reports folder required sign-in; Publication Name/Links were blank.
+5. Approved Home/participation/About/project images, with section or project
+	 mapping, permissions and useful captions/alt-text context (R10-R12/R14).
+	 Do not substitute unrelated stock as evidence of organizational activity.
+6. Actual public telephone number and TikTok account URL (R16).
+7. If available, the verified pre-rework source/archive or branch/commit (R02).
+	 This is a recovery dependency, not proof the contractor failed to supply it.
+	 The local earlier commit is only a starter app; do not checkout HEAD~1.
+
+SERVICE / POLICY DEPENDENCIES - NOT READY TO ENABLE
+- Volunteer applications (R04): approve privacy notice, volunteer policies,
+	consent wording (including minors if relevant), handling of optional sensitive
+	information, delivery/storage service, access permissions and retention.
+	Then implement and test validation, success/error handling and secure intake.
+- Newsletter (R08): approve subscription provider, consent/privacy text,
+	confirmation and unsubscribe process, and abuse protection. Then implement
+	and test subscription delivery. Controls remain disabled and labeled honestly.
+- Website contact delivery, if required (R05): approve provider, destination,
+	privacy/retention and abuse controls, then implement and verify delivery.
+	A mailto draft is not a successful website submission.
+- Credentials must be configured securely, never supplied in this text file.
+
+CLEAR WORK STILL BLOCKED / NOT CLAIMED COMPLETE
+- R07/R10/R11/R12: layout structures are restored, but final image population
+	is blocked on approved assets and mappings. Team uses initials; project cards
+	and details use neutral image placeholders; Home pathways/About use labeled
+	stock. The Home hero retains the original photograph from the old site.
+	The original demo identities, old 2015 founding claim, unsupported project
+	figures and deleted Home sections were deliberately not restored.
+- Exact pixel parity is not claimed: supplied content has different lengths,
+	the approved logo/photos are missing, the footer color change was requested,
+	and no verified August source commit is available. The live August site and
+	retained components, not the starter commit, were used as the design baseline.
+- R03/R06: Layout support is implemented, but real directories remain empty.
+	Populate approved content, then verify real images, files, downloads,
+	filtering/sorting and carousel navigation in the browser.
+- R04/R08: Newsletter and volunteer submission are intentionally still
+	unavailable. Their required integrations are not marked as completed fixes.
+
+LOCAL VALIDATION AFTER CORRECTIONS
+- DOCX regeneration: 19 projects and eight values; source-copy checks passed.
+- TEST_BASE_URL=http://localhost:3001 node --test scripts/verify-content.test.mjs:
+	40 tests passed, zero failures. Includes the Home styling/content regression,
+	restored copy, public routes, all
+	project bodies, four redirects and three missing-detail 404 cases.
+- Focused ESLint checks and TypeScript no-emit checks passed for the changes.
+- Browser bounds checks: eleven pages at 390px, 1024px and 1440px. No content
+	overflow found; flagged empty decorative elements have clipping ancestors.
+	Checked /, /about, /about/team, /projects, /contact?subject=Partnership,
+	/publications, /about/reports, /about/partners, /volunteer, /news and the long
+	youth-led-election-oversight project detail. No broken loaded images detected.
+- Mobile menu open/Escape, required contact fields and Partnership preselection
+	passed. Corrected the mission-card contrast defect and a narrow-screen Contact
+	heading word split; verified the whole word fits at 390px after the fix.
+	Desktop About submenu open/Escape/focus restoration passed at a measured
+	1440px. Mobile Home, About and project-detail captures were inspected.
+	The browser host sometimes resized even isolated screenshot viewports;
+	interaction/bounds checks measured viewport width separately. Captures are
+	visual evidence, not an exact-size or pixel-parity certification.
+- In-memory rendered fixtures checked resource covers/fallback/language/default
+	date order/download links and partner groups containing 0, 1, 5 and 7 entries.
+	These do not verify real asset loading, download responses or interactive
+	populated carousel/filter behavior. No fixture data was added to the site.
+- No production deployment, CMS change, subscription, application or message
+	delivery was performed. No production build or all-link/accessibility/
+	pixel-perfect certification was performed.
+
+ORIGINAL PRE-CORRECTION AUDIT (HISTORICAL EVIDENCE)
+
+PURPOSE AND DECISION RULE
+Compare the previous Cloudflare website, the current website/source, and
+NGO_Comments_restructure.docx, including its embedded screenshots and comments.
+Preserve the current approved content and functional improvements. Preserve the
+old design wherever the document did not explicitly request a design change.
+Do not restore fictional demo content, false delivery confirmations, or removed
+sections merely to restore their appearance. This is a review, not a deployment.
+
+BASELINES
+Previous: https://195de923-ngo.ytech.workers.dev
+Cloudflare version: 195de923-57d5-4a7e-80a7-40a7682ae4b7 (2026-08-04).
+Current public site: https://yfcngo.org
+Current source: local Git HEAD 93ab55f, "Hand off v1" (2026-09-19).
+The prior handoff identifies Cloudflare version
+dd54ce6f-cc00-4965-b5c7-6f528931ce4f. That deployment ID was not freshly
+verified; live checks below describe the public site observed during review.
+Document: content-source/NGO_Comments_restructure.docx.
+Document references P0, P1, etc. mean zero-based top-level Word paragraphs,
+matching the indexing used by scripts/import-content.py. Image names refer to
+word/media inside the DOCX, not to approved reusable brand assets.
+
+CONFIRMED FINDINGS
+
+R01 - CONTACT: A LIMITED DELETION BECAME A PAGE-WIDE REDESIGN
+Priority: High. Classification: Misinterpreted scope.
+Source: P363-P378; P364 image22.png; P366 "Delete this part only".
+The screenshot shows the bottom "Have An Idea Or Want To Help?" CTA banner.
+It does not show the Contact hero, information blocks, message form or social
+links as deletion targets. The current app/contact/page.tsx instead renders
+PageIntro, a plain information column and InquiryForm, leaving the older
+ContactHero, ContactInfo, ContactForm and SocialLinks components unmounted.
+Correction: Restore the old Contact visual structure except for the explicitly
+deleted CTA. Keep the real address/email/social links, validated fields,
+Partnership preselection and honest delivery behavior from the current version.
+Do not restore a simulated successful-send message or unapproved contact data.
+
+R02 - RESTORATION CANNOT USE A VERIFIED PREVIOUS GIT COMMIT YET
+Priority: High. Classification: Recovery limitation, not a contractor omission.
+The available history and reflogs contain only 92f3a0b (Create Next App starter)
+and 93ab55f (September handoff). The earlier commit is not the August website.
+A blind checkout of HEAD~1 would replace the website with the starter app.
+Old feature components remain in the current tree and can be compared against
+the old Cloudflare preview and document screenshots for selective reuse.
+An exact source restoration needs the original pre-rework source/archive or
+another verified branch/commit. No checkout/reset has been performed.
+
+R03 - PUBLICATIONS AND REPORTS: REFERENCE DESIGNS NOT IMPLEMENTED
+Priority: High. Classification: Explicit visual requirement missed.
+Source: Publications P335-P359/image15.png; Reports P95-P100/image2.png.
+The Publications reference shows a cover-image grid, category labels, dates,
+view/download actions and a sidebar with category checkboxes and sorting.
+The Reports reference shows cover cards with titles, dates and downloads.
+Current ResourceCatalog uses text-only rows and top-mounted dropdowns; Resource
+in lib/resources.ts has no cover-image field. Supplying files alone will not
+produce the requested design. Both publications and reports arrays are empty.
+Correction: Implement the requested cover-led layouts and approved document
+records. Preserve current sorting, categories, descriptive labels, empty-state
+handling and separate view/download actions. Confirm whether publication
+checkboxes must support selecting multiple categories; current filtering allows
+only one. Do not copy the reference website's sample documents or categories.
+Downloads still need real-file verification, including cross-origin behavior;
+an HTML download attribute alone does not guarantee a forced file download.
+Files: app/components/ui/ResourceCatalog.tsx; lib/resources.ts.
+
+R04 - VOLUNTEER APPLICATION IS A DISABLED PREVIEW, NOT A WORKING FORM
+Priority: High. Classification: Requested functionality incomplete.
+Source: P418-P440, including online application steps and Submit Application.
+VolunteerApplication includes the requested groups of fields, participation
+preference and consent checkboxes, but the fieldset is disabled and onSubmit
+only prevents the default action. No application can be submitted.
+The page honestly explains that applications are not open; this honesty should
+remain until an actual service exists. Privacy terms and volunteer policies
+are also explicitly pending. Correction requires approved policies, consent,
+validation, secure handling/storage, access and retention rules, and a real
+delivery workflow with error/success handling. Do not merely remove disabled.
+File: app/components/contact/VolunteerApplication.tsx.
+
+R05 - CONTACT DELIVERY IS AN EMAIL-APP FALLBACK
+Priority: Medium. Classification: Acceptance decision, not hidden delivery.
+Current InquiryForm validates required fields in the browser, constructs an
+encoded mailto draft, and explicitly says nothing is submitted to the website.
+That is useful and safer than claiming a message was sent when it was not.
+It depends on a configured email handler and the user sending the draft.
+Confirm whether a true website-submitted contact form is required; if so this
+is not complete. The document updates contact content but does not specify a
+mail provider or delivery contract. Preserve subject preselection either way.
+File: app/components/contact/InquiryForm.tsx.
+
+R06 - PARTNER DIRECTORY: EMPTY DATA AND DIFFERENT SLIDESHOW COMPOSITION
+Priority: High. Classification: Missing assets and reference-layout mismatch.
+Source: P80-P94; P82 images1.png and 11.png show multiple logos side by side.
+PartnerDirectory has next/previous navigation but shows only one partner at a
+time. Both donorsAndPartners and networksAndCoalitions are empty, so visitors
+see publication-pending notices, not the requested directory.
+Correction: Obtain approved identities, logos and links; implement the referenced
+multi-logo desktop slideshow with an appropriate responsive layout. Keep
+separate network/coalition content, accessible controls and the Partnership
+contact link. The reference screenshots are layout examples, not authorization
+to publish their organizations as Youth for Change partners.
+Files: app/components/about/PartnerDirectory.tsx; lib/partner-directory.ts.
+
+R07 - TEAM PORTRAITS AND VISUAL PRESENTATION ARE STILL MISSING
+Priority: Medium. Classification: Missing assets and unrequested simplification.
+Source: P69-P79 includes a portrait-folder link and named team members.
+The six supplied names, roles and LinkedIn links are present, but team/page.tsx
+renders initials in circles and plain border-top entries, not portraits.
+Correction: Obtain the approved photos and retain the old portrait-led team
+presentation where compatible with the requested dedicated Team page.
+Do not reuse the old demo people's identities or unrelated stock portraits.
+File: app/about/team/page.tsx.
+
+R08 - NEWSLETTER IS NOT A WORKING SUBSCRIPTION
+Priority: High. Classification: Requested functionality incomplete.
+Source: Home P37-P38 requests a newsletter subscription section.
+The current homepage includes the text and disabled subscription controls with
+an explicit unavailability notice. This is not a completed signup workflow.
+Correction: Configure an approved subscriber service and consent/privacy,
+unsubscribe and abuse protections, then verify success and failure behavior.
+Preserve the truthful notice until subscriptions actually work.
+File: app/page.tsx.
+
+R09 - SUPPLIED TEAM AND VOLUNTEER WORDING WAS OMITTED OR REWRITTEN
+Priority: Medium. Classification: Content fidelity issue.
+P70 supplies "Meet the people behind Youth for Change"; the Team page uses
+"Our Team" and does not render that supplied heading.
+Volunteer P383, P391, P398 and P409 combine headings with introductory copy:
+- Is This For You? / There's no fixed profile ... We're looking for people who:
+- Ways to Get Involved / Depending on your interests and availability ...
+- What You Take Away / Volunteering here should give you something back too:
+- What We Ask in Return / Being part of this community comes with a few
+	expectations. Volunteers are asked to:
+The importer starts at the following list paragraphs and omits these lead-ins.
+The page substitutes four different headings. Restore the supplied headings
+and introductions unless editorial changes are explicitly approved. Preserve
+the correctly imported lists, no-experience statement, international-opportunity
+caveat, placement caveat and inclusion statement.
+Files: scripts/import-content.py; app/volunteer/page.tsx;
+app/about/team/page.tsx. Exact agreement with the current importer does not
+prove that every requested paragraph was selected by that importer.
+
+R10 - HOME PARTICIPATION REFERENCE REDUCED TO TEXT COLUMNS
+Priority: Medium. Classification: Explicit visual reference only partly met.
+Source: P29/image23.png asks for a design like the pictured image-led items
+and says buttons should have names. The current Participate / Volunteer /
+Partner blocks have named buttons and correct destinations, but no images;
+they are plain border-top articles. Keep the named buttons and real supplied
+pathway text, but implement the referenced image-led composition using approved
+relevant imagery. Do not copy example news stories, dates, badges or identities
+from the reference. Exact image crop and styling should be agreed from the
+reference rather than inventing another unrelated design.
+File: app/page.tsx.
+
+R11 - ABOUT: REFERENCED VISION/MISSION DESIGN WAS REPLACED
+Priority: High. Classification: Visual reference and preservation mismatch.
+Source: P49-P68, especially P61/image9.png. The old site and reference use
+distinctive icon-led vision/mission cards; the current page uses two plain text
+columns in a gray band. The image-led About hero and composed Who We Are
+section also became a generic PageIntro followed by plain paragraphs.
+Correction: Restore the referenced vision/mission treatment and old About
+composition where compatible with the new information architecture. Use the
+supplied introduction, vision, mission and eight values, not the old slogans,
+six demo values, demo identities or incorrect founding year. The separate
+Team/Partners/Reports pages and links are intentional new structure to retain.
+The old About CTA is absent too; the homepage/Contact deletion screenshots do
+not explicitly remove it. Retain its role with approved copy and valid current
+destinations unless its removal is separately approved.
+Files: app/about/page.tsx; app/components/about/AboutVisionMission.tsx;
+app/components/about/AboutHero.tsx; app/components/about/WhoWeAre.tsx;
+app/components/about/AboutCTA.tsx.
+
+R12 - PROJECTS: CONTENT REPLACEMENT ALSO REMOVED THE OLD VISUAL STRUCTURE
+Priority: High. Classification: Unrequested visual simplification.
+Source: P101-P334 supplies the introduction and real project records, not a
+blanket instruction to replace the visual system. The old listing has a
+prominent hero, image-led project cards, impact emphasis and a partnership CTA.
+The current listing uses PageIntro and text-only cards; current detail pages
+use a plain overview/results/acknowledgment structure.
+Correction: Reuse the old listing and detail presentation where it fits the
+real content, with approved project images. Preserve the current/completed
+grouping, stable real slugs, metadata, full narratives, results, acknowledgments
+and contact links. All 19 current project bodies passed live content checks.
+Do not revive fictional categories, counts, galleries or activity facts to fill
+old components. Category controls require a real taxonomy and working filter;
+their presence in the old page does not prove they worked. Preserve the role
+of the old partnership CTA with the current Partnership contact destination,
+unless removal is separately approved.
+Files: app/projects/page.tsx; app/projects/[slug]/page.tsx;
+app/components/projects/ProjectsGrid.tsx; app/components/projects/.
+
+R13 - HOME FOCUS AREAS: REFERENCE TREATMENT NOT FOLLOWED
+Priority: Medium. Classification: Visual reference mismatch.
+The document's image19.png shows prominent bordered icon tiles. The current
+six focus areas have the correct topics and icons but appear as flat rows
+with top borders. Apply the reference tile treatment to the six supplied
+topics; do not import the external organization's topics or branding.
+Preserve the four supplied impact figures: 40+ projects, 2,000+ participants,
+100+ trainings/events and 50+ communities. Their replacement of old demo
+statistics is correct; it does not require flattening the old visual hierarchy.
+File: app/page.tsx.
+
+R14 - HOME HERO: DESIGN SCOPE AND "BUTTON TEXT" NEED CLARIFICATION
+Priority: Medium. Classification: Ambiguous instruction, not a proven defect.
+Source: P6-P10, old hero image7.png, introduction reference image13.png.
+The old hero has a large split composition, pill-like tagline and prominent
+photo; the current hero keeps a split arrangement but changes the hierarchy,
+tagline treatment, image framing and spacing. P6 calls "Empowering Youth.
+Creating Change." button text, while the current page renders it as a small
+non-interactive paragraph. Establish whether this means the old decorative
+pill or an actual action; an action also needs a destination.
+The external introduction reference may authorize a local hero adjustment,
+but does not clearly authorize a site-wide redesign. Default to old hero
+styling outside the approved reference change. Keep the new organization copy,
+Explore Our Work -> /projects, Get Involved -> /contact and removal of the
+Joined by proof. Replace the labeled illustrative stock photo only with an
+approved organization image; do not present stock as documentary evidence.
+File: app/page.tsx.
+
+R15 - SHARED BRANDING/FOOTER: PARTLY DONE, WITH UNRESOLVED DESIGN INPUTS
+Priority: Medium. Classification: Asset dependency and clarification.
+The requested main navigation and About submenu are implemented. Preserve
+those destinations and current keyboard/mobile menu behavior when restoring
+the old header's visual proportions. Do not restore the old demo brand or
+obsolete navigation simply because it appears in a screenshot.
+Source: P41-P42/image14.png explicitly requests a footer color change and the
+EED acknowledgment below the logo. The current footer changes the color and
+includes the exact acknowledgment below a text wordmark. No approved graphic
+logo is rendered. Obtain the approved logo; preserve the EED placement.
+The document does not specify the target footer color, so calling the new
+light teal color itself a definite violation would be unjustified. Confirm
+that color while retaining the old footer composition where compatible with
+the updated navigation and real contact details.
+Files: app/components/ui/Navbar.tsx; app/components/ui/Footer.tsx;
+lib/navigation.ts; lib/organization.ts.
+
+R16 - PHONE/TIKTOK AND LEGACY URL POLICY ARE NOT FULLY SPECIFIED
+Priority: Medium. Classification: Missing input and acceptance decisions.
+Contact P376 contains a placeholder phone number, not publishable data.
+P372/P378 request TikTok but supply no usable destination. Obtain the actual
+number and account URL before adding controls. The four supplied social
+links, real email and address are present; do not fabricate missing values.
+The current redirects are /partners -> /about/partners, /events ->
+/projects#current, /donate -> /contact, /get-involved -> /volunteer.
+News/event detail routes currently return 404; unknown project slugs do too.
+Removing homepage previews does not itself define the treatment of historical
+detail URLs. Confirm whether any real published URLs need redirects or an
+archive. Do not republish demo articles/events or invent slug mappings.
+The requested News "Coming soon" page is correct, not missing news content.
+
+CORRECT REMOVALS THAT MUST NOT BE REVERSED
+P39-P40 "Delete this parts" identifies the old homepage bottom CTA
+(image8), core-value pills (image18), placeholder partner strip (image5),
+Latest News preview (image20), and Upcoming Events preview (image3).
+The current omission of these homepage sections matches that instruction.
+P9-P10/image12 also explicitly removes the hero "Joined by" volunteer proof.
+P364-P366/image22 removes the Contact bottom CTA only.
+These deletions do not authorize deleting equivalent content on other pages.
+In particular, the eight new About values still belong on the About page.
+
+CHANGES ADDRESSED CORRECTLY - PRESERVE DURING RESTORATION
+- Real Youth for Change identity, email, address, four supplied social links
+	and EED acknowledgment replace demo organization/contact information.
+- Six main navigation entries and three About submenu pages are implemented.
+- Home introduction, six focus topics, four impact figures, named participation
+	buttons and their destinations are present.
+- About introduction, vision, mission and eight icon-supported values exist.
+- Six Team names, roles, LinkedIn links and Board description are present.
+- Partner narrative and Partnership-preselected contact destination exist.
+- All 19 real projects have distinct routes, full narratives, results and
+	acknowledgments. One Current and eighteen Completed follows the document;
+	confirm subsequent status changes with the content owner, not the clock.
+- Reports/Publications categories, sorting/filtering code, separate view and
+	download controls and honest empty states exist, though populated behavior
+	and requested reference layouts remain incomplete.
+- News says Coming soon as requested. Specified homepage/Contact removals
+	are honored. Keep these removals when reusing older components.
+- Contact draft behavior accurately discloses that nothing is sent by the site.
+	Volunteer/newsletter controls do not falsely claim successful submission.
+- Volunteer lists, process, no-experience statement, international-opportunity
+	caveat, no-placement guarantee and inclusion statement are retained.
+- Preserve skip-to-content, main-content anchor, accessible labels, current-page
+	indicators, separate About link/toggle, Escape/focus handling and mobile menu
+	state management. These are source-observed improvements, not a complete
+	accessibility certification.
+
+ASSET ACCESS RECHECK
+Checked the document's links during this review without authenticated access:
+- Team folder 1O3ayLoc61KpvBYDhHJCPm3KGk8uaYr82 exposed a listing including
+	photo_2026-08-24_19-06-34.jpg. It is not accurate to say no team assets can be
+	accessed. Complete portrait coverage, identity mapping and usable downloads
+	were not established; do not assign a portrait by guessing.
+- Partner folder 12_TIrEz5PlWAN7sOuRbit7W3U4RZCRot and Reports folder
+	1MelQ7rnMbEh6TF55oYxIJNXR-H9M8wAv redirected this fetch session to Google
+	sign-in. This establishes an access limitation, not that the files are absent.
+- The external weyouth.am report-functionality reference was blocked by the
+	fetch client. The embedded DOCX screenshot remains usable design evidence;
+	actual external view/download behavior was not verified.
+- Publication Name/Links fields in the document are blank. Approved publication
+	files/metadata/covers, partner identities/links, logo, home/project imagery
+	and complete portrait mapping still need an approved content inventory.
+
+CORRECTION ORDER AND ACCEPTANCE CHECKLIST
+1. Agree the rule: reuse the old visual system except explicit new references
+	 and deletions. Recover verified old source if available; otherwise compare
+	 retained components to the old preview. Do not checkout the starter commit.
+2. Restore Contact, About and Projects composition; apply explicit Home,
+	 partner slideshow and resource-catalog references. Keep current content,
+	 routes, accessibility logic and truthful unavailable states throughout.
+3. Restore missing Team/Volunteer wording and populate approved assets/data.
+	 Confirm hero pill/action, footer color, multi-category filtering, phone,
+	 TikTok, project status maintenance and historical URL treatment.
+4. Agree real contact delivery requirements and implement newsletter/volunteer
+	 integrations with approved privacy/policy controls. Treat unavailable
+	 services as incomplete, even when their notices are correct.
+5. Verify desktop/mobile presentation against the old preview and each explicit
+	 reference. Exercise keyboard menus, filters/sort, carousel navigation,
+	 named CTAs, actual document files and success/failure submission paths.
+	 Re-run the 37 content/route checks to prevent restoration losing new content.
+
+REVIEW COVERAGE AND LIMITATIONS
+The review combined the old live preview, current live pages, local source,
+DOCX paragraphs/table, all 23 embedded images and its single Word comment.
+The comment is only an email mention; it adds no substantive requirement.
+Coverage by public surface:
+- /: hero, focus, impact, participation, newsletter, removals; R08/R10/R13/R14.
+- /about: introduction, vision/mission, values, subsection navigation; R11.
+- /about/team: identities, profiles, portraits and heading; R07/R09.
+- /about/partners: directory, networks, narrative and CTA; R06.
+- /about/reports and /publications: categories, files and layout; R03.
+- /projects and all 19 current project details: content and presentation; R12.
+- /news: requested Coming soon; old detail-route policy; R16.
+- /contact: limited deletion, details and email draft; R01/R05/R16.
+- /volunteer: copy, application fields and inactive submission; R04/R09.
+- Shared header/footer and four legacy entry routes: R15/R16.
+
+Executed: TEST_BASE_URL=https://yfcngo.org node --test
+scripts/verify-content.test.mjs
+Result: 37 tests passed, zero failures. This includes ten public pages, all
+19 project bodies, four redirects, three sample missing-detail URLs and one
+content-structure test. The page checks include expected headings, main-content
+anchors, real email and absence of tested demo identity strings.
+Reconstructed the importer in memory: its selected DOCX fields match the
+generated JSON exactly, including 19 projects and eight values. No JSON was
+rewritten. This does NOT cover omitted fields such as those in R09 or prove
+that screenshot requirements were met.
+
+This is not pixel-perfect, all-viewport, all-link or end-to-end certification.
+Form delivery, populated catalog behavior, every historical detail route,
+complete asset accessibility and all mobile/keyboard interactions remain
+unverified. Some old detail components have no exact one-to-one real project
+equivalent. No claim is made that demo-era functionality actually worked.
+Local Git/source inspection is not proof of exact current deployment identity.
+At the audit-only stage, no fresh build/lint, CMS audit, authenticated asset
+download or deployment was performed; only this review report was edited.
+The later authorized implementation changed application code and regenerated
+content locally. Its status and validation are recorded at the top of this file.

@@ -152,7 +152,7 @@ export default function ProjectsCTA() {
 
 
             <Button
-              href="/partners"
+              href="/contact?subject=Partnership"
               size="lg"
 
               className="
@@ -174,7 +174,7 @@ export default function ProjectsCTA() {
 
 
             <Button
-              href="/get-involved"
+              href="/volunteer"
               size="lg"
 
               variant="outline"

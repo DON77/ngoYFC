@@ -1,3 +1,5 @@
+import { organization } from "./organization";
+
 export const contactHero = {
   badge: "Contact Us",
 
@@ -15,7 +17,7 @@ export const contactInfo = [
     title: "Office",
 
     value:
-      "Yerevan, Armenia",
+      organization.address,
 
     description:
       "Our main coordination office.",
@@ -26,55 +28,15 @@ export const contactInfo = [
     title: "Email",
 
     value:
-      "info@example.org",
+      organization.email,
 
     description:
       "Send us your questions and proposals.",
   },
 
 
-  {
-    title: "Phone",
-
-    value:
-      "+374 XX XXX XXX",
-
-    description:
-      "Available during working hours.",
-  },
 ];
 
 
 
-export const socialLinks = [
-  {
-    name: "Facebook",
-
-    href:
-      "#",
-  },
-
-
-  {
-    name: "Instagram",
-
-    href:
-      "#",
-  },
-
-
-  {
-    name: "LinkedIn",
-
-    href:
-      "#",
-  },
-
-
-  {
-    name: "YouTube",
-
-    href:
-      "#",
-  },
-];
+export const socialLinks = organization.socials;

@@ -55,6 +55,7 @@
         "description": "We answer for our commitments to young people, partners and donors."
       }
     ],
+    "teamHeading": "Meet the people behind Youth for Change",
     "teamIntroduction": [
       "Youth for Change is shaped by people who believe in the power of young people to participate, lead and create meaningful change.",
       "Our team works together to develop programs, build partnerships, support young people and communities, and turn the organization\u2019s mission into action."
@@ -443,6 +444,24 @@
   ],
   "volunteer": {
     "introduction": "At Youth for Change, volunteering means putting your time, ideas and energy behind work that's already moving - projects that open up democratic participation, defend human rights, and build stronger, more inclusive communities across Armenia. It's a two-way exchange: you help push real initiatives forward, and in return you pick up hands-on experience, new skills, and a network of people doing similar work.",
+    "sectionIntroductions": [
+      {
+        "title": "Is This For You?",
+        "text": "There's no fixed profile for a Youth for Change volunteer. We're looking for people who:"
+      },
+      {
+        "title": "Ways to Get Involved",
+        "text": "Depending on your interests and availability, you might find yourself:"
+      },
+      {
+        "title": "What You Take Away",
+        "text": "Volunteering here should give you something back too:"
+      },
+      {
+        "title": "What We Ask in Return",
+        "text": "Being part of this community comes with a few expectations. Volunteers are asked to:"
+      }
+    ],
     "profile": [
       "believe in what we're trying to do and share our values",
       "care about young people having a real say in their communities",

@@ -1,7 +1,6 @@
 import {
   MapPin,
   Mail,
-  Phone,
 } from "lucide-react";
 
 
@@ -20,7 +19,6 @@ import {
 const icons = [
   MapPin,
   Mail,
-  Phone,
 ];
 
 
@@ -53,7 +51,7 @@ export default function ContactInfo() {
 
             gap-8
 
-            md:grid-cols-3
+            md:grid-cols-2
           "
         >
 
@@ -141,7 +139,11 @@ export default function ContactInfo() {
                     "
                   >
 
-                    {item.value}
+                    {item.title === "Email" ? (
+                      <a href={`mailto:${item.value}`} className="text-blue-700 underline">
+                        {item.value}
+                      </a>
+                    ) : item.value}
 
                   </p>
 

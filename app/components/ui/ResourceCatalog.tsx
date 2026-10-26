@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Download, ExternalLink, FileText } from "lucide-react";
 import type { Resource } from "@/lib/resources";
 
@@ -23,23 +24,22 @@ export default function ResourceCatalog({
         : first.date.localeCompare(second.date),
     );
   return (
-    <section aria-label={label} className="py-12">
-      <div className="flex flex-wrap items-end gap-5 border-b border-slate-200 pb-6">
-        <div>
-          <label htmlFor="resource-category" className="field-label">
-            Category
-          </label>
-          <select
-            id="resource-category"
-            className="form-control mt-2"
-            value={category}
-            onChange={(event) => setCategory(event.target.value)}
-          >
+    <section aria-label={label} className="grid gap-10 py-12 lg:grid-cols-[14rem_minmax(0,1fr)]">
+      <aside className="border-b border-slate-200 pb-6 lg:border-b-0 lg:border-r lg:pr-6">
+        <fieldset>
+          <legend className="mb-5 text-lg font-semibold">Categories</legend>
+          <div className="flex flex-wrap gap-4 lg:flex-col">
             {["All", ...categories].map((value) => (
-              <option key={value}>{value}</option>
+              <label key={value} className="flex cursor-pointer items-center gap-3 text-sm">
+                <input type="radio" name="resource-category" value={value} checked={category === value} onChange={() => setCategory(value)} className="h-4 w-4 shrink-0 accent-blue-600" />
+                {value}
+              </label>
             ))}
-          </select>
-        </div>
+          </div>
+        </fieldset>
+      </aside>
+      <div className="min-w-0">
+      <div className="flex flex-wrap items-end justify-between gap-5 border-b border-slate-200 pb-6">
         <div>
           <label htmlFor="resource-sort" className="field-label">
             Date
@@ -59,10 +59,20 @@ export default function ResourceCatalog({
         </p>
       </div>
       {filtered.length ? (
-        <div className="divide-y divide-slate-200">
+        <div className="mt-8 grid gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {filtered.map((resource) => (
-            <article key={resource.id} className="py-8">
-              <p className="text-sm">
+            <article key={resource.id} className="flex min-w-0 flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm">
+              <div className="relative aspect-[3/4] border-b border-slate-200 bg-slate-50">
+                {resource.cover ? (
+                  <Image src={resource.cover.src} alt={resource.cover.alt} fill sizes="(max-width: 639px) 100vw, (max-width: 1279px) 50vw, 25vw" className="object-contain p-4" />
+                ) : (
+                  <div className="flex h-full items-center justify-center text-slate-400" aria-label="No cover image available">
+                    <FileText size={64} aria-hidden="true" />
+                  </div>
+                )}
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+              <p className="text-xs">
                 {resource.category} ·{" "}
                 <time dateTime={resource.date}>
                   {new Intl.DateTimeFormat("en-GB", {
@@ -73,9 +83,10 @@ export default function ResourceCatalog({
                   }).format(new Date(resource.date))}
                 </time>
               </p>
-              <h2 className="mt-3 text-2xl">{resource.title}</h2>
+              <h2 className="mt-3 text-xl">{resource.title}</h2>
+              {resource.language && <p className="mt-2 text-sm">{resource.language}</p>}
               <p className="mt-3 max-w-3xl">{resource.description}</p>
-              <div className="mt-5 flex gap-6 text-sm font-semibold text-blue-700">
+              <div className="mt-auto flex flex-wrap gap-5 pt-5 text-sm font-semibold text-blue-700">
                 <a
                   href={resource.viewUrl}
                   target="_blank"
@@ -96,6 +107,7 @@ export default function ResourceCatalog({
                   Download
                 </a>
               </div>
+              </div>
             </article>
           ))}
         </div>
@@ -114,6 +126,7 @@ export default function ResourceCatalog({
           </p>
         </div>
       )}
+      </div>
     </section>
   );
 }

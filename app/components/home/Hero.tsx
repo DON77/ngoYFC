@@ -6,6 +6,7 @@ import Button from "../ui/Button";
 import Badge from "../ui/Badge";
 
 import { hero } from "@/lib/home-content";
+import content from "@/lib/document-content.json";
 
 
 export default function Hero() {
@@ -67,7 +68,7 @@ export default function Hero() {
           >
 
             <Badge>
-              {hero.badge}
+              Empowering Youth. Creating Change.
             </Badge>
 
 
@@ -77,7 +78,7 @@ export default function Hero() {
                 max-w-3xl
               "
             >
-              {hero.title}
+              Youth for Change
             </h1>
 
 
@@ -89,7 +90,7 @@ export default function Hero() {
                 text-lg
               "
             >
-              {hero.description}
+              {content.home.introduction}
             </p>
 
 
@@ -106,86 +107,20 @@ export default function Hero() {
             >
 
               <Button
-                href={hero.primaryButton.href}
+                href="/projects"
                 size="lg"
               >
-                {hero.primaryButton.text}
+                Explore Our Work
               </Button>
 
 
               <Button
-                href={hero.secondaryButton.href}
+                href="/contact"
                 variant="outline"
                 size="lg"
               >
-                {hero.secondaryButton.text}
+                Get Involved
               </Button>
-
-            </div>
-
-
-            {/* Small trust message */}
-
-            <div
-              className="
-                mt-10
-                flex
-                items-center
-                gap-4
-              "
-            >
-
-              <div
-                className="
-                  flex
-                  -space-x-3
-                "
-              >
-
-                {[
-                  1,
-                  2,
-                  3,
-                ].map((item)=>(
-                  <div
-                    key={item}
-                    className="
-                      h-10
-                      w-10
-
-                      overflow-hidden
-
-                      rounded-full
-
-                      border-2
-                      border-white
-
-                      bg-slate-200
-                    "
-                  >
-
-                    <Image
-                      src={`https://www.wscf-europe.org/wp-content/uploads/2026/03/Screenshot-2026-03-26-at-10.52.58-scaled.png?w=1200`}
-                      alt="Volunteer"
-                      width={40}
-                      height={40}
-                    />
-
-                  </div>
-                ))}
-
-              </div>
-
-
-              <p
-                className="
-                  text-sm
-                  text-slate-500
-                "
-              >
-                Joined by thousands of volunteers worldwide
-              </p>
-
 
             </div>
 
@@ -224,6 +159,7 @@ export default function Hero() {
                 alt="Young people working together"
                 width={800}
                 height={900}
+                sizes="(max-width: 1023px) 100vw, 50vw"
                 priority
                 className="
                   h-[520px]
@@ -279,7 +215,7 @@ export default function Hero() {
                   text-blue-600
                 "
               >
-                8,500+
+                2,000+
               </p>
 
 
@@ -289,7 +225,7 @@ export default function Hero() {
                   text-slate-600
                 "
               >
-                young people reached
+                Direct Participants
               </p>
 
 

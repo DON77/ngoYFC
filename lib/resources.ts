@@ -6,6 +6,8 @@ export type Resource = {
   description: string;
   viewUrl: string;
   downloadUrl: string;
+  cover?: { src: string; alt: string };
+  language?: string;
 };
 
 export const publicationCategories = [

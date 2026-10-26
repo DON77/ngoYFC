@@ -143,7 +143,7 @@ export default function AboutCTA() {
           >
 
             <Button
-              href="/get-involved"
+              href="/volunteer"
               size="lg"
 
               className="

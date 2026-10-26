@@ -10,34 +10,40 @@ import {
 
 export default function PartnerDirectory() {
   const [index, setIndex] = useState(0);
-  const partner = donorsAndPartners[index];
+  const visiblePartners = Array.from(
+    { length: Math.min(5, donorsAndPartners.length) },
+    (_, offset) => donorsAndPartners[(index + offset) % donorsAndPartners.length],
+  );
   return (
     <>
       <section className="mt-12" aria-label="Donors and partners">
         <h2 className="section-title">Our donors and partners</h2>
-        {partner ? (
-          <div className="mt-8" aria-roledescription="carousel">
-            <div aria-live="polite" aria-atomic="true">
+        {visiblePartners.length ? (
+          <div className="mt-8" role="region" aria-label="Partner logos" aria-roledescription="carousel">
+            <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5" aria-live="polite" aria-atomic="true">
+              {visiblePartners.map((partner) => (
               <a
+                key={partner.website}
                 href={partner.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full max-w-sm flex-col items-center gap-4"
+                className="flex min-w-0 flex-col items-center gap-4 text-center"
                 aria-label={`${partner.name} (opens in a new tab)`}
               >
-                <div className="relative h-40 w-full">
+                <div className="relative h-32 w-full">
                   <Image
                     src={partner.logo}
                     alt={partner.name}
                     fill
-                    sizes="384px"
+                    sizes="(max-width: 639px) 50vw, (max-width: 1023px) 33vw, 20vw"
                     className="object-contain"
                   />
                 </div>
-                <span className="text-lg font-semibold">{partner.name}</span>
+                <span className="text-sm font-semibold">{partner.name}</span>
               </a>
+              ))}
             </div>
-            {donorsAndPartners.length > 1 && (
+            {donorsAndPartners.length > 5 && (
               <div className="mt-6 flex items-center gap-4">
                 <button
                   type="button"
@@ -55,7 +61,7 @@ export default function PartnerDirectory() {
                   <ChevronLeft size={22} />
                 </button>
                 <span className="text-sm">
-                  {index + 1} / {donorsAndPartners.length}
+                  Starting at partner {index + 1} of {donorsAndPartners.length}
                 </span>
                 <button
                   type="button"

@@ -1,22 +1,27 @@
 import Container from "./Container";
+import Badge from "./Badge";
+import { ReactNode } from "react";
 
 export default function PageIntro({
   title,
   eyebrow,
   description,
+  children,
 }: {
   title: string;
   eyebrow?: string;
   description?: string;
+  children?: ReactNode;
 }) {
   return (
-    <header className="border-b border-blue-100 bg-soft-gradient py-14 lg:py-20">
+    <header className="bg-soft-gradient py-24 lg:py-32">
       <Container>
-        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
-        <h1 className="max-w-5xl text-4xl leading-tight lg:text-5xl">
-          {title}
-        </h1>
-        {description && <p className="mt-6 max-w-3xl text-lg">{description}</p>}
+        <div className="mx-auto max-w-4xl text-center">
+          {eyebrow && <Badge>{eyebrow}</Badge>}
+          <h1 className={eyebrow ? "mt-6" : undefined}>{title}</h1>
+          {description && <p className="mx-auto mt-6 max-w-2xl text-lg">{description}</p>}
+          {children}
+        </div>
       </Container>
     </header>
   );

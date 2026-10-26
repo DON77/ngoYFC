@@ -18,12 +18,12 @@ import {
 
 
 
-const icons = [
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-];
+const icons = {
+  Facebook: FaFacebook,
+  Instagram: FaInstagram,
+  LinkedIn: FaLinkedin,
+  YouTube: FaYoutube,
+};
 
 
 
@@ -65,11 +65,11 @@ export default function SocialLinks() {
 
 
           {socialLinks.map(
-            (social, index) => {
+            (social) => {
 
 
               const Icon =
-                icons[index];
+                icons[social.name as keyof typeof icons];
 
 
 
@@ -78,6 +78,9 @@ export default function SocialLinks() {
                   key={social.name}
 
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${social.name} (opens in a new tab)`}
 
                   className="
                     group

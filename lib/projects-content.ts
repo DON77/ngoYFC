@@ -1,3 +1,5 @@
+export const projectImages: Record<string, { src: string; alt: string }> = {};
+
 export const projectsHero = {
   badge: "Our Projects",
 

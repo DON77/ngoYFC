@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Mail, MapPin } from "lucide-react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -6,6 +7,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import Container from "./Container";
+import Button from "./Button";
 import { ABOUT_NAVIGATION, NAVIGATION } from "@/lib/navigation";
 import { organization } from "@/lib/organization";
 
@@ -15,15 +17,15 @@ export default function Footer() {
   return (
     <footer className="border-t border-teal-200 bg-teal-50 text-slate-800">
       <Container>
-        <div className="grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
-          <div>
+        <div className="grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
+          <div className="lg:col-span-2">
             <Link href="/" className="text-2xl font-bold">
               {organization.name}
             </Link>
             <p className="mt-4 max-w-md text-sm">
               {organization.acknowledgment}
             </p>
-            <div className="mt-5 flex gap-2">
+            <div className="mt-6 flex gap-3">
               {organization.socials.map((social, index) => {
                 const Icon = socialIcons[index];
                 return (
@@ -43,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
           <nav aria-label="Footer navigation">
-            <h2 className="text-base">Explore</h2>
+            <h2 className="text-lg">Explore</h2>
             <ul className="mt-4 space-y-3">
               {NAVIGATION.map((item) => (
                 <li key={item.href}>
@@ -58,7 +60,7 @@ export default function Footer() {
             </ul>
           </nav>
           <nav aria-label="Organization navigation">
-            <h2 className="text-base">Our organization</h2>
+            <h2 className="text-lg">Our organization</h2>
             <ul className="mt-4 space-y-3">
               {ABOUT_NAVIGATION.map((item) => (
                 <li key={item.href}>
@@ -78,15 +80,18 @@ export default function Footer() {
             </ul>
           </nav>
         </div>
-        <div className="flex flex-wrap justify-between gap-4 border-t border-teal-200 py-6 text-sm">
-          <a href={`mailto:${organization.email}`} className="font-semibold">
+        <div className="grid items-center gap-6 border-t border-teal-200 py-8 text-sm md:grid-cols-3">
+          <a href={`mailto:${organization.email}`} className="flex items-center gap-3 font-semibold">
+            <Mail size={20} className="shrink-0" aria-hidden="true" />
             {organization.email}
           </a>
-          <address className="max-w-lg not-italic">
+          <address className="flex max-w-lg items-center gap-3 not-italic">
+            <MapPin size={20} className="shrink-0" aria-hidden="true" />
             {organization.address}
           </address>
+          <div className="md:text-right"><Button href="/contact" size="sm">Contact Us</Button></div>
         </div>
-        <p className="border-t border-teal-200 py-5 text-xs">
+        <p className="border-t border-teal-200 py-6 text-center text-sm">
           &copy; {new Date().getFullYear()} {organization.name}. All rights
           reserved.
         </p>
